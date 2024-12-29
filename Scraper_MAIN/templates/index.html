@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Scraper</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Honda Scraper</h1>
+        <form action="/scrape" method="post">
+            <label for="model">Select Vehicle Model:</label>
+            <select name="model" id="model" required>
+                <option value="">--Select a Model--</option>
+                <option value="CR-V">CR-V</option>
+                <option value="Accord">Accord</option>
+                <option value="Civic">Civic</option>
+                <option value="Camry">Camry</option>
+                <option value="Pilot">Pilot</option>
+                <option value="Odyssey">Odyssey</option>
+            </select>
+
+            <button type="submit">Start Scraping</button>
+        </form>
+    </div>
+</body>
+</html>
